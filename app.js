@@ -95,3 +95,15 @@ if(!reduced && 'IntersectionObserver' in window){
   }),{threshold:.12});
   document.querySelectorAll('.motion-item').forEach(el=>motionObserver.observe(el));
 }
+
+// Small, bounded parallax: decorative layers never follow the pointer directly.
+const landscape=document.querySelector('.alpine-hero');
+function updateLandscape(){if(reduced||!landscape)return;const progress=Math.max(0,Math.min(-landscape.getBoundingClientRect().top,innerHeight));landscape.style.setProperty('--mountain-y',`${progress*.08}px`);landscape.style.setProperty('--forest-y',`${progress*-.035}px`);}
+addEventListener('scroll',updateLandscape,{passive:true});updateLandscape();
+const contours=document.querySelector('.topo-wrap');
+if(!reduced&&matchMedia('(hover:hover)').matches){let pointerQueued=false,px=0,py=0;contours.addEventListener('pointermove',event=>{const rect=contours.getBoundingClientRect();px=(event.clientX/innerWidth-.5)*10;py=(event.clientY/innerHeight-.5)*8;if(!pointerQueued){pointerQueued=true;requestAnimationFrame(()=>{contours.style.setProperty('--contour-x',`${px}px`);contours.style.setProperty('--contour-y',`${py}px`);pointerQueued=false;});}},{passive:true});contours.addEventListener('pointerleave',()=>{contours.style.setProperty('--contour-x','0px');contours.style.setProperty('--contour-y','0px');});}
+const certificateViewer=document.getElementById('certificate-viewer');let certificateTrigger;
+document.querySelectorAll('[data-certificate]').forEach(button=>button.addEventListener('click',()=>{certificateTrigger=button;const img=document.getElementById('viewer-image');img.src=button.dataset.certificate;img.alt=button.querySelector('img').alt;document.getElementById('viewer-original').href=button.closest('.cert-card').querySelector('.cert-links a').href;certificateViewer.showModal();}));
+certificateViewer.querySelector('.viewer-close').addEventListener('click',()=>certificateViewer.close());
+certificateViewer.addEventListener('click',event=>{if(event.target===certificateViewer){const r=certificateViewer.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)certificateViewer.close();}});
+certificateViewer.addEventListener('close',()=>certificateTrigger?.focus());

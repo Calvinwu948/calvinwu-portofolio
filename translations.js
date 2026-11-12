@@ -1,5 +1,24 @@
 const translations = {
-"experienceTitle": {"zh-Hans": "项目经历", "id": "Pengalaman", "en": "Experience"}, "experienceRole": {"zh-Hans": "项目组长", "id": "Ketua Kelompok", "en": "Team Leader"}, "experienceContext": {"zh-Hans": "电脑程序设计导论 · 第2组", "id": "Introduction to Computer Programming · Kelompok 2", "en": "Introduction to Computer Programming · Group 2"}, "experienceSummary": {"zh-Hans": "参与数据模型、补货提醒、系统集成与回归测试。", "id": "Model data, pengingat restock, integrasi sistem, dan pengujian regresi.", "en": "Data models, restock alerts, system integration, and regression testing."},
+  "experienceTitle": {
+    "zh-Hans": "工作经验",
+    "id": "Pengalaman Kerja",
+    "en": "Work Experience"
+  },
+  "experienceRole": {
+    "zh-Hans": "项目组长",
+    "id": "Ketua Kelompok",
+    "en": "Team Leader"
+  },
+  "experienceContext": {
+    "zh-Hans": "电脑程序设计导论 · 第2组",
+    "id": "Introduction to Computer Programming · Kelompok 2",
+    "en": "Introduction to Computer Programming · Group 2"
+  },
+  "experienceSummary": {
+    "zh-Hans": "参与数据模型、补货提醒、系统集成与回归测试。",
+    "id": "Model data, pengingat restock, integrasi sistem, dan pengujian regresi.",
+    "en": "Data models, restock alerts, system integration, and regression testing."
+  },
   "skip": {
     "zh-Hans": "跳至内容",
     "id": "Lewati pembuka",
@@ -31,9 +50,9 @@ const translations = {
     "en": "Connecting through language.\nExploring through technology."
   },
   "heroSub": {
-    "zh-Hans": "你好，我是 Calvin。中文翻译与 AI 爱好者。",
-    "id": "Halo, saya Calvin. Translator Mandarin & AI Enthusiast.",
-    "en": "Hello, I’m Calvin. Mandarin Translator & AI Enthusiast."
+    "zh-Hans": "中文翻译、费用结算与工作自动化",
+    "id": "Penerjemahan Mandarin, settlement, dan otomasi kerja",
+    "en": "Mandarin translation, settlement, and workflow automation"
   },
   "scroll": {
     "zh-Hans": "向下探索",
@@ -51,9 +70,9 @@ const translations = {
     "en": "Hi, I’m"
   },
   "role": {
-    "zh-Hans": "中文翻译 · AI 爱好者",
-    "id": "Translator Mandarin & AI Enthusiast",
-    "en": "Mandarin Translator & AI Enthusiast"
+    "zh-Hans": "中文翻译 · 费用结算 · 工作自动化",
+    "id": "Translator Mandarin · Settlement · Otomasi",
+    "en": "Mandarin Translation · Settlement · Automation"
   },
   "connect": {
     "zh-Hans": "联系我",
@@ -61,19 +80,19 @@ const translations = {
     "en": "Connect on LinkedIn"
   },
   "bioTitle": {
-    "zh-Hans": "理解语意，也关注细节。",
-    "id": "Memahami bahasa. Memperhatikan detail.",
-    "en": "Language with context. Work with care."
+    "zh-Hans": "连接语言，简化工作。",
+    "id": "Menghubungkan bahasa. Mempermudah pekerjaan.",
+    "en": "Connecting languages. Simplifying work."
   },
   "bio": {
-    "zh-Hans": "我是 Calvin，一名中文翻译。我的华语听力与阅读能力已达 TOCFL Level 4／CEFR B2。我重视语意、脉络与清楚的表达，让跨语言沟通更容易理解。",
-    "id": "Saya Calvin, seorang Translator Mandarin dengan kemampuan listening dan reading tersertifikasi TOCFL Level 4 / CEFR B2. Saya menaruh perhatian pada makna, konteks, dan kejelasan agar komunikasi lintas bahasa lebih mudah dipahami.",
-    "en": "I’m Calvin, a Mandarin translator with TOCFL Level 4 / CEFR B2 certification in listening and reading. I care about meaning, context, and clear expression that makes cross-language communication easier."
+    "zh-Hans": "我是 Calvin 吴克傧，具备中文翻译、费用结算及跨部门协调经验。目前在 IWIP 工作，负责费用核对、结算单制作与数据异常处理。",
+    "id": "Gue Calvin Wu, dengan pengalaman penerjemahan Mandarin, settlement biaya, dan koordinasi lintas departemen. Di IWIP, pekerjaan gue mencakup verifikasi biaya, penyusunan settlement, dan penanganan selisih data.",
+    "en": "I’m Calvin Wu, with experience in Mandarin translation, expense settlement, and cross-department coordination. At IWIP, I handle expense verification, settlement statements, and data discrepancies."
   },
   "bio2": {
-    "zh-Hans": "语言之外，我也使用 Excel，并探索 AI 在学习与日常工作中的应用。在 PANTAUTOKO 项目中，我担任组长，参与数据模型、补货提醒、系统集成与回归测试。",
-    "id": "Di luar bahasa, saya menggunakan Excel dan mengeksplorasi AI untuk belajar serta pekerjaan sehari-hari. Sebagai ketua kelompok PANTAUTOKO, saya berkontribusi pada model data, peringatan restock, integrasi, dan pengujian regresi.",
-    "en": "Beyond languages, I use Excel and explore AI for learning and everyday work. As PANTAUTOKO’s team leader, I contributed to data models, restock alerts, integration, and regression testing."
+    "zh-Hans": "我曾推动 Smart Salary 功能与审批流程优化，并借助 AI 辅助开发 Python 工具，实现 OA 表单填写与 PDF 批量合并。熟悉 Excel，也正在 Cakrawala University 学习人工智能。",
+    "id": "Gue ikut mengoptimalkan fitur dan alur persetujuan Smart Salary, serta membuat alat Python dengan bantuan AI untuk pengisian formulir OA dan penggabungan PDF. Terampil menggunakan Excel dan sedang kuliah Artificial Intelligence di Cakrawala University.",
+    "en": "I have helped improve Smart Salary features and approval workflows, and developed AI-assisted Python tools for OA form entry and batch PDF merging. I work with Excel and study Artificial Intelligence at Cakrawala University."
   },
   "seeWork": {
     "zh-Hans": "探索我的作品 ↗",
@@ -386,9 +405,9 @@ const translations = {
     "en": "Making communication clearer while exploring technology in everyday life."
   },
   "heroIdentity": {
-    "zh-Hans": "中文翻译 · AI 爱好者",
-    "id": "Translator Mandarin · AI Enthusiast",
-    "en": "Mandarin Translator · AI Enthusiast"
+    "zh-Hans": "中文翻译与 AI 爱好者",
+    "id": "Translator Mandarin & AI Enthusiast",
+    "en": "Mandarin Translator & AI Enthusiast"
   },
   "viewCredentials": {
     "zh-Hans": "查看证书",
@@ -449,5 +468,60 @@ const translations = {
     "zh-Hans": "山口洋，印度尼西亚",
     "id": "Singkawang, Indonesia",
     "en": "Singkawang, Indonesia"
+  },
+  "iwipRole": {
+    "zh-Hans": "中文翻译｜费用结算与系统优化",
+    "id": "Translator Mandarin · Settlement & Optimasi Sistem",
+    "en": "Mandarin Translator · Settlement & System Optimization"
+  },
+  "iwipDate": {
+    "zh-Hans": "2025年7月 — 至今",
+    "id": "Jul 2025 — Sekarang",
+    "en": "Jul 2025 — Present"
+  },
+  "iwipSummary": {
+    "zh-Hans": "费用核对与结算、Smart Salary 功能优化、计算逻辑排查及 AI / Python 工作自动化。",
+    "id": "Verifikasi dan settlement biaya, optimasi Smart Salary, analisis logika perhitungan, serta otomasi kerja dengan AI / Python.",
+    "en": "Expense verification and settlement, Smart Salary improvements, calculation troubleshooting, and AI / Python workflow automation."
+  },
+  "iwipDetail": {
+    "zh-Hans": "优化表单选项与填写限制，推动取消 GA 审批环节；开发 OA 自动填表与按公司批量合并 PDF 的工具。",
+    "id": "Mengoptimalkan opsi dan validasi formulir, mendorong penghapusan tahap persetujuan GA, serta membuat alat pengisian OA dan penggabungan PDF per perusahaan.",
+    "en": "Improved form options and validation, helped remove the GA approval step, and built OA form-filling and company-based PDF merging tools."
+  },
+  "internRole": {
+    "zh-Hans": "实习生｜费用结算",
+    "id": "Magang · Settlement Biaya",
+    "en": "Intern · Expense Settlement"
+  },
+  "internDate": {
+    "zh-Hans": "2024年10月 — 2025年3月",
+    "id": "Okt 2024 — Mar 2025",
+    "en": "Oct 2024 — Mar 2025"
+  },
+  "internSummary": {
+    "zh-Hans": "处理中国籍员工交通、住宿及办事处运营费用报销；审核机票与酒店费用，核对接送及额外餐食数据。",
+    "id": "Menangani reimbursement transportasi, akomodasi karyawan Tiongkok, dan operasional kantor; memeriksa biaya tiket/hotel serta data antar-jemput dan makanan tambahan.",
+    "en": "Processed transport, accommodation, and office reimbursements; reviewed airfare and hotel expenses, and reconciled transport and additional meal data."
+  },
+  "trainingLabel": {
+    "zh-Hans": "语言培训",
+    "id": "Pelatihan Bahasa",
+    "en": "Language Training"
+  },
+  "previewCertificate": {
+    "zh-Hans": "预览证书",
+    "id": "Pratinjau sertifikat",
+    "en": "Preview certificate"
+  },
+  "closePreview": {
+    "zh-Hans": "关闭",
+    "id": "Tutup",
+    "en": "Close"
+  },
+  "originalFile": {
+    "zh-Hans": "打开完整文件 ↗",
+    "id": "Buka file lengkap ↗",
+    "en": "Open full file ↗"
   }
 };
