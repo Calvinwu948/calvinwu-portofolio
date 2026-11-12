@@ -169,3 +169,38 @@ nav{background:linear-gradient(125deg,#ffffff18,#131a2c88 45%,#ffffff0b);border:
 @media(max-width:520px){.folder-gallery-links{max-width:335px;gap:12px}.folder-gallery-links a{font-size:11px}.preview-folder{height:275px}.folders{gap:100px}.preview-folder.is-open .paper-front{transform:translate(5px,-65px) rotate(4deg)}.preview-folder.is-open .paper-second{transform:translate(-5px,-95px) rotate(-3deg) scale(.95)}.preview-folder.is-open .paper-third{transform:translate(-10px,-120px) rotate(-5deg) scale(.9)}}
 @media(hover:none){.js-motion .eka-education .education-item.in-view:not(:hover):not(:focus-within){opacity:.8}}
 @media(prefers-reduced-motion:reduce){.alpine-content,.alpine-content>div,.alpine-portrait,.alpine-sky,.folder-arriving .certificate-paper,.folder-arriving .project-paper{animation:none!important;transform:none;opacity:1;translate:none}.portal{height:auto}.portal-stage{position:static;height:65svh}.portal-stage>a{transform:none!important;opacity:1!important}.portal-stage>p{opacity:1!important}.eka-education .education-item,.education-number{transition:none!important}}
+
+/* Public guestbook */
+#Contact .contact-grid{grid-template-columns:minmax(270px,.78fr) minmax(0,1.22fr);align-items:start;gap:28px}
+#Contact .contact-card{grid-column:1;grid-row:1}
+#Contact .find-card{grid-column:1;grid-row:2;padding:28px}
+#Contact .contact-graphic{display:none}
+#Contact .guestbook-card{grid-column:2;grid-row:1 / span 2;min-width:0;border:1px solid rgba(190,210,255,.13);border-radius:30px;padding:38px;background:linear-gradient(145deg,rgba(24,34,52,.88),rgba(10,15,25,.94));box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 20px 65px #0002}
+#Contact .contact-card{padding:32px}
+#Contact .contact-card h3{float:none;position:static;font-size:30px;margin:16px 0}
+#Contact .contact-card input:not([name=website]){width:100%;box-sizing:border-box;background:#080e19;border:1px solid #ffffff20;border-radius:14px;color:#f5f7ff;padding:14px 16px;font:inherit;margin:8px 0}
+#guest-name-help{display:block;color:#99a7bc;font-size:13px;margin:0 0 24px}
+#Contact input:focus-visible,#Contact textarea:focus-visible{outline:2px solid #729dff;outline-offset:3px}
+.guestbook-header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+#Contact .guestbook-header h3{font-size:28px;margin:12px 0 0;letter-spacing:-.025em}
+#guestbook-count{color:#80a7ff;font-size:22px;font-weight:500}
+.guestbook-intro{color:#9daabe;margin:16px 0 28px;font-size:15px}
+.guestbook-action{border:1px solid #ffffff24;border-radius:12px;background:#ffffff06;color:#c7d6f2;padding:10px 16px;font:inherit;font-size:14px;cursor:pointer;transition:background .2s,border-color .2s}
+.guestbook-action:hover{background:#5987ff20;border-color:#7c9fee70}
+.guestbook-action:focus-visible{outline:2px solid #80a7ff;outline-offset:4px}
+.guestbook-action:disabled{opacity:.5;cursor:wait}
+#guestbook-list{list-style:none;padding:0;margin:0}
+.guestbook-entry{display:flex;gap:16px;padding:25px 0;border-top:1px solid #ffffff12;animation:guest-arrive .35s ease both}
+.guestbook-avatar{display:grid;place-items:center;flex:0 0 44px;height:44px;border:1px solid #a4bcff22;border-radius:50%;background:linear-gradient(145deg,#4269a92b,#21324948);color:#aac5ff;font-size:14px;font-weight:600}
+.guestbook-entry-body{flex:1;min-width:0}
+.guestbook-entry-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.guestbook-entry-head strong{font-size:16px;color:#f1f4fc;overflow-wrap:anywhere}
+.guestbook-entry time{font-size:12px;color:#8d9cb2;white-space:nowrap}
+.guestbook-entry p{font-size:15px;line-height:1.8;color:#b9c4d7;margin:8px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+#guestbook-status{color:#9cabc1;font-size:14px;line-height:1.8}
+#guestbook-status:empty{display:none}
+#guestbook-more{margin-top:20px;width:100%}
+#guestbook-more[hidden]{display:none}
+@keyframes guest-arrive{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@media(max-width:800px){#Contact .contact-grid{grid-template-columns:1fr}#Contact .contact-card,#Contact .find-card,#Contact .guestbook-card{grid-column:1;grid-row:auto}#Contact .guestbook-card{padding:24px}#Contact .find-card{order:3}.guestbook-entry-head{flex-wrap:wrap;gap:4px 12px}.guestbook-entry{gap:12px}.guestbook-avatar{flex-basis:38px;height:38px}#Contact .contact-card{padding:24px}}
+@media(prefers-reduced-motion:reduce){.guestbook-entry{animation:none}}

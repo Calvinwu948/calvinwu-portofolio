@@ -320,9 +320,9 @@ const translations = {
     "en": "Leave a comment"
   },
   "formIntro": {
-    "zh-Hans": "想法、建议，或一句你好。不需要姓名或邮箱。",
-    "id": "Ide, saran, atau sekadar halo. Tanpa nama atau email.",
-    "en": "An idea, a suggestion, or just a hello. No name or email needed."
+    "zh-Hans": "分享想法、建议，或一句你好。",
+    "id": "Bagikan kesan, ide, atau sekadar sapa.",
+    "en": "Share a thought, an idea, or just say hello."
   },
   "name": {
     "zh-Hans": "姓名",
@@ -345,14 +345,14 @@ const translations = {
     "en": "At least 2 characters"
   },
   "privacy": {
-    "zh-Hans": "无需提供身份信息。留言仅 Calvin 可见，不会公开显示。",
-    "id": "Tanpa identitas. Komentar hanya dapat dibaca Calvin dan tidak ditampilkan publik.",
-    "en": "No identity details required. Comments are private to Calvin, not publicly displayed."
+    "zh-Hans": "留言和名字将公开显示。请勿填写私人信息。",
+    "id": "Nama dan komentar akan tampil publik. Jangan tulis informasi pribadi.",
+    "en": "Your name and comment will be public. Please keep personal information private."
   },
   "send": {
-    "zh-Hans": "发送消息 ↗",
-    "id": "Kirim pesan ↗",
-    "en": "Send message ↗"
+    "zh-Hans": "发布留言 ↗",
+    "id": "Publikasikan komentar ↗",
+    "en": "Post comment ↗"
   },
   "find": {
     "zh-Hans": "保持联系",
@@ -365,9 +365,9 @@ const translations = {
     "en": "Sending…"
   },
   "success": {
-    "zh-Hans": "留言已发送，谢谢你！",
-    "id": "Komentar terkirim. Terima kasih!",
-    "en": "Comment sent. Thank you!"
+    "zh-Hans": "留言已发布，谢谢你！",
+    "id": "Komentar dipublikasikan. Terima kasih!",
+    "en": "Comment published. Thank you!"
   },
   "error": {
     "zh-Hans": "消息尚未发送。请检查网路，稍后再试；内容已保留。",
@@ -375,9 +375,9 @@ const translations = {
     "en": "Message not sent. Check your connection and try again; your text is still in the form."
   },
   "unavailable": {
-    "zh-Hans": "留言功能尚未开放，消息不会发送。请稍后再试。",
-    "id": "Formulir belum aktif; pesan belum bisa dikirim. Silakan coba lagi nanti.",
-    "en": "Messaging is not available yet; messages cannot be sent. Please try again later."
+    "zh-Hans": "留言功能暂时不可用，请稍后再试。",
+    "id": "Komentar belum tersedia. Coba lagi nanti.",
+    "en": "Comments are temporarily unavailable. Please try again later."
   },
   "invalid": {
     "zh-Hans": "请填写2至3000个字符的留言。",
@@ -553,5 +553,55 @@ const translations = {
     "zh-Hans": "点击展开 · 再次点击收起",
     "id": "Klik untuk buka / tutup",
     "en": "Click to open / close"
+  },
+  "guestName": {
+    "zh-Hans": "名字（选填）",
+    "id": "Nama (opsional)",
+    "en": "Name (optional)"
+  },
+  "guestNameHelp": {
+    "zh-Hans": "留空即可匿名留言",
+    "id": "Kosongkan untuk tampil anonim",
+    "en": "Leave blank to post anonymously"
+  },
+  "guestbookTitle": {
+    "zh-Hans": "留言墙",
+    "id": "Komentar",
+    "en": "Guestbook"
+  },
+  "guestbookIntro": {
+    "zh-Hans": "来自访客的一点心意。",
+    "id": "Jejak kecil dari orang-orang yang mampir.",
+    "en": "A little hello from everyone who stops by."
+  },
+  "refreshComments": {
+    "zh-Hans": "刷新",
+    "id": "Segarkan",
+    "en": "Refresh"
+  },
+  "moreComments": {
+    "zh-Hans": "查看更多",
+    "id": "Muat lainnya",
+    "en": "Load more"
+  },
+  "commentsEmpty": {
+    "zh-Hans": "还没有留言。来留下第一句你好吧。",
+    "id": "Belum ada komentar. Jadi yang pertama menyapa.",
+    "en": "No comments yet. Be the first to say hello."
+  },
+  "commentsLoading": {
+    "zh-Hans": "正在加载留言…",
+    "id": "Memuat komentar…",
+    "en": "Loading comments…"
+  },
+  "commentsError": {
+    "zh-Hans": "留言暂时无法加载，请稍后刷新。",
+    "id": "Komentar belum bisa dimuat. Coba segarkan nanti.",
+    "en": "Comments are unavailable. Please try refreshing later."
+  },
+  "anonymous": {
+    "zh-Hans": "匿名访客",
+    "id": "Anonim",
+    "en": "Anonymous"
   }
 };

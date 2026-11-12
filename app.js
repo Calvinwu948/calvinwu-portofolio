@@ -12,7 +12,7 @@ function setLanguage(value){
   document.querySelector('meta[name="description"]').content=tr('heroSub')+' TOCFL B2 · Excel · PANTAUTOKO';
   document.querySelector('nav').setAttribute('aria-label',value==='zh-Hans'?'主选单':value==='id'?'Navigasi utama':'Main navigation');
   document.querySelector('footer>a').setAttribute('aria-label',value==='zh-Hans'?'回到顶端':value==='id'?'Kembali ke atas':'Back to top');
-  if(statusKey)setStatus(statusKey);
+  if(statusKey)setStatus(statusKey);window.dispatchEvent(new Event('portfolio-language'));
   sendButton.textContent=tr(sending?'sending':'send');
   try{localStorage.setItem('calvin-language',value);}catch{}
   requestAnimationFrame(()=>{updateScroll();drawContours();});
@@ -41,19 +41,19 @@ const configured=config.messagingEnabled === true && /^https:\/\/[a-z0-9-]+\.sup
 message.addEventListener('input',()=>document.getElementById('message-count').textContent=`${message.value.length} / 3000`);
 form.addEventListener('submit',async event=>{
   event.preventDefault();if(sending)return;
-  if(!configured){setStatus('unavailable');return;}
+  if(!configured || !window.guestbookReady){setStatus('unavailable');return;}
   const fields=new FormData(form);
   if(fields.get('website')){setStatus('invalid');return;}
-  const payload={message:fields.get('message').trim(),locale};
+  const payload={message:fields.get('message').trim(),display_name:fields.get('display_name').trim() || null,locale};
   if(!form.reportValidity()||payload.message.length<2){setStatus('invalid');return;}
   sending=true;sendButton.disabled=true;sendButton.textContent=tr('sending');form.setAttribute('aria-busy','true');setStatus('');
   const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
   try{
     const headers={'Content-Type':'application/json',apikey:config.supabaseKey,Prefer:'return=minimal'};
     if(config.supabaseKey.startsWith('eyJ'))headers.Authorization=`Bearer ${config.supabaseKey}`;
-    const response=await fetch(`${config.supabaseUrl.replace(/\/$/,'')}/rest/v1/portfolio_comments`,{method:'POST',headers,body:JSON.stringify(payload),signal:controller.signal});
+    const response=await fetch(`${config.supabaseUrl.replace(/\/$/,'')}/rest/v1/portfolio_guestbook`,{method:'POST',headers,body:JSON.stringify(payload),signal:controller.signal});
     if(!response.ok)throw new Error('Request failed');
-    form.reset();document.getElementById('message-count').textContent='0 / 3000';setStatus('success');
+    form.reset();document.getElementById('message-count').textContent='0 / 3000';setStatus('success');window.dispatchEvent(new Event('guestbook-posted'));
   }catch{setStatus('error');}
   finally{clearTimeout(timeout);sending=false;sendButton.disabled=false;form.removeAttribute('aria-busy');sendButton.textContent=tr('send');}
 });
