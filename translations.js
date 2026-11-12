@@ -603,5 +603,30 @@ const translations = {
     "zh-Hans": "匿名访客",
     "id": "Anonim",
     "en": "Anonymous"
+  },
+  "tocflCertificate": {
+    "zh-Hans": "证书",
+    "id": "Sertifikat",
+    "en": "Certificate"
+  },
+  "tocflReport": {
+    "zh-Hans": "成绩单",
+    "id": "Laporan nilai",
+    "en": "Score report"
+  },
+  "pauseSlides": {
+    "zh-Hans": "暂停",
+    "id": "Jeda",
+    "en": "Pause"
+  },
+  "playSlides": {
+    "zh-Hans": "播放",
+    "id": "Putar",
+    "en": "Play"
+  },
+  "fiveCertificates": {
+    "zh-Hans": "5 项证书 · 向下查看全部",
+    "id": "5 sertifikat · gulir untuk melihat semuanya",
+    "en": "5 certificates · scroll to see all"
   }
 };

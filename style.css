@@ -239,3 +239,32 @@ nav{background:linear-gradient(125deg,#ffffff18,#131a2c88 45%,#ffffff0b);border:
 @keyframes sheet-place-right{0%{opacity:0;translate:32px -170px;rotate:12deg}18%{opacity:1}74%{translate:-2px 4px;rotate:-.8deg}100%{opacity:1;translate:0 0;rotate:0deg}}
 @keyframes sheet-place-front{0%{opacity:0;translate:-10px -190px;rotate:-7deg}20%{opacity:1}76%{translate:0 4px;rotate:.6deg}100%{opacity:1;translate:0 0;rotate:0deg}}
 @media(prefers-reduced-motion:reduce){.preview-folder.folder-arriving .certificate-paper,.preview-folder.folder-arriving .project-paper{animation:none!important}.folder-glint{transition:none}.preview-folder .certificate-paper,.preview-folder .project-paper{transition:none!important}}
+
+/* Quieter front-only light and all five certificate sheets. */
+.preview-folder .folder-back .folder-glint{display:none}
+.preview-folder:hover .folder-cover .folder-glint,.preview-folder:focus-visible .folder-cover .folder-glint{opacity:.24}
+.preview-folder .paper-fifth{top:-6px;z-index:1;transform:scale(.80);filter:brightness(.7)}
+.preview-folder .paper-fourth{top:2px;z-index:2;transform:scale(.85);filter:brightness(.74)}
+.preview-folder .paper-third{z-index:3}.preview-folder .paper-second{z-index:4}.preview-folder .paper-front{z-index:5}
+.preview-folder:hover:not(.is-open) .paper-fourth,.preview-folder:focus-visible:not(.is-open) .paper-fourth{transform:translateY(-84px) rotate(3deg) scale(.85)}
+.preview-folder:hover:not(.is-open) .paper-fifth,.preview-folder:focus-visible:not(.is-open) .paper-fifth{transform:translateY(-94px) rotate(-4deg) scale(.8)}
+.preview-folder.is-open .paper-fourth{transform:translate(-18px,-185px) rotate(-10deg) scale(.85)}
+.preview-folder.is-open .paper-fifth{transform:translate(14px,-205px) rotate(9deg) scale(.8)}
+.preview-folder.folder-arriving .paper-fifth{animation:sheet-place-right 2.1s cubic-bezier(.22,1,.36,1) both}
+.preview-folder.folder-arriving .paper-fourth{animation:sheet-place-left 2.1s .18s cubic-bezier(.22,1,.36,1) both}
+.preview-folder.folder-arriving .paper-third{animation-delay:.36s}
+.preview-folder.folder-arriving .paper-second{animation-delay:.54s}
+.preview-folder.folder-arriving .paper-front{animation-delay:.72s}
+.tocfl-controls{display:flex;align-items:center;gap:5px;padding:10px 14px;background:#101724;border-bottom:1px solid #ffffff12}
+.tocfl-controls button{font:inherit;font-size:12px;padding:8px 10px;border-radius:8px;background:transparent;color:#9eabc2}
+.tocfl-controls button[aria-pressed=true]{background:#729cff24;color:#c4d7ff}
+#tocfl-pause{margin-left:auto}
+#tocfl-preview{container-type:size}
+#tocfl-preview.score-active img{position:absolute;left:50%;top:50%;width:100cqh;height:100cqw;max-width:none;object-fit:contain;transform:translate(-50%,-50%) rotate(-90deg);background:#141a25}
+#tocfl-preview.slide-changing img{animation:document-arrive .5s ease}
+.certificate-count{color:#9eabc2;text-align:center;font-size:13px;margin:0 0 24px}
+@keyframes document-arrive{from{opacity:.15}to{opacity:1}}
+@media(max-width:520px){.preview-folder.is-open .paper-fourth{transform:translate(-10px,-144px) rotate(-8deg) scale(.85)}.preview-folder.is-open .paper-fifth{transform:translate(8px,-165px) rotate(8deg) scale(.8)}}
+@media(prefers-reduced-motion:reduce){#tocfl-preview.slide-changing img{animation:none}}
+
+.certificate-count{grid-column:1 / -1;margin:0;text-align:left}
