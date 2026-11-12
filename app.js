@@ -96,8 +96,7 @@ if(!reduced && 'IntersectionObserver' in window){
   document.querySelectorAll('.motion-item').forEach(el=>motionObserver.observe(el));
 }
 function updateTimelineFocus(){
-  for(const selector of ['.education-list','.education-companion']){
-    const group=document.querySelector(selector);if(!group)continue;
+  for(const group of document.querySelectorAll('.education-list,.education-companion>div')){
     const items=[...group.querySelectorAll('.education-item,.timeline-item')];
     const target=innerHeight*.43;
     const nearest=items.reduce((best,item)=>{const rect=item.getBoundingClientRect();const distance=Math.abs(rect.top+Math.min(rect.height,130)/2-target);return !best||distance<best.distance?{item,distance}:best;},null);
