@@ -86,7 +86,7 @@ const translations = {
   },
   "bio": {
     "zh-Hans": "我是 Calvin 吴克傧，在 IWIP 从事中文翻译与费用结算，喜欢把复杂的工作变得简单。",
-    "id": "Gue Calvin Wu. Di IWIP, gue bekerja di penerjemahan Mandarin dan settlement biaya—dan senang membuat pekerjaan rumit jadi lebih sederhana.",
+    "id": "Saya Calvin Wu. Di IWIP, saya bekerja sebagai Translator Mandarin, divisi settlement biaya—dan senang membuat pekerjaan yang kompleks jadi lebih sederhana.",
     "en": "I’m Calvin Wu. At IWIP, I work in Mandarin translation and expense settlement—and enjoy making complex work simpler."
   },
   "bio2": {
