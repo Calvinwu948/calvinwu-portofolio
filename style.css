@@ -206,3 +206,5 @@ nav{background:linear-gradient(125deg,#ffffff18,#131a2c88 45%,#ffffff0b);border:
 @media(prefers-reduced-motion:reduce){.guestbook-entry{animation:none}}
 
 #Contact .contact-card h3{text-align:left;transform:none;color:#f3f6ff}#Contact .guestbook-card{min-height:330px}
+
+#Contact .contact-card h3 span{float:none;color:inherit}
