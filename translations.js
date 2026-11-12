@@ -1,4 +1,5 @@
 const translations = {
+"experienceTitle": {"zh-Hans": "项目经历", "id": "Pengalaman", "en": "Experience"}, "experienceRole": {"zh-Hans": "项目组长", "id": "Ketua Kelompok", "en": "Team Leader"}, "experienceContext": {"zh-Hans": "电脑程序设计导论 · 第2组", "id": "Introduction to Computer Programming · Kelompok 2", "en": "Introduction to Computer Programming · Group 2"}, "experienceSummary": {"zh-Hans": "参与数据模型、补货提醒、系统集成与回归测试。", "id": "Model data, pengingat restock, integrasi sistem, dan pengujian regresi.", "en": "Data models, restock alerts, system integration, and regression testing."},
   "skip": {
     "zh-Hans": "跳至内容",
     "id": "Lewati pembuka",

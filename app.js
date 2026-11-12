@@ -75,7 +75,7 @@ function updateScroll(){
   navLinks.forEach((a,i)=>{a.classList.toggle('active',i===current);if(i===current)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
   const first=navLinks[0].getBoundingClientRect(),active=navLinks[current].getBoundingClientRect();
   document.querySelector('.mascot').style.setProperty('--ghost-x',`${active.left-first.left+(active.width-first.width)/2}px`);
-  updateTimelineFocus();
+
 }
 let queued=false;addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(()=>{updateScroll();queued=false;});}},{passive:true});
 if(!reduced && 'IntersectionObserver' in window){document.documentElement.classList.add('js-motion');const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}
@@ -95,12 +95,3 @@ if(!reduced && 'IntersectionObserver' in window){
   }),{threshold:.12});
   document.querySelectorAll('.motion-item').forEach(el=>motionObserver.observe(el));
 }
-function updateTimelineFocus(){
-  for(const group of document.querySelectorAll('.education-list,.education-companion>div')){
-    const items=[...group.querySelectorAll('.education-item,.timeline-item')];
-    const target=innerHeight*.43;
-    const nearest=items.reduce((best,item)=>{const rect=item.getBoundingClientRect();const distance=Math.abs(rect.top+Math.min(rect.height,130)/2-target);return !best||distance<best.distance?{item,distance}:best;},null);
-    items.forEach(item=>item.classList.toggle('is-current',item===nearest?.item));
-  }
-}
-updateTimelineFocus();
