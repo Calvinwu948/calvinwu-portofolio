@@ -220,3 +220,22 @@ nav{background:linear-gradient(125deg,#ffffff18,#131a2c88 45%,#ffffff0b);border:
 .preview-folder>.folder-info{inset:auto 28px 25px}
 .preview-folder .certificate-paper{box-shadow:0 5px 12px #0003;border:0}
 @media(prefers-reduced-motion:reduce){.preview-folder .folder-cover{transition:none;transform:none!important}}
+
+/* Directional glass, restrained reflections and individually placed sheets. */
+.folder-glint{opacity:0;transition:opacity .65s ease;pointer-events:none}
+.preview-folder:hover .folder-glint,.preview-folder:focus-visible .folder-glint{opacity:.72}
+.preview-folder .folder-back{filter:none;transition:filter .8s ease}
+.preview-folder:hover .folder-back,.preview-folder:focus-visible .folder-back{filter:brightness(1.07)}
+.preview-folder .certificate-paper,.preview-folder .project-paper{transition-duration:.95s;transition-timing-function:cubic-bezier(.2,.8,.2,1)}
+.preview-folder:hover:not(.is-open) .paper-front,.preview-folder:focus-visible:not(.is-open) .paper-front{transform:translateY(-40px) rotate(-2deg)}
+.preview-folder:hover:not(.is-open) .paper-second,.preview-folder:focus-visible:not(.is-open) .paper-second{transform:translateY(-56px) rotate(2deg) scale(.95)}
+.preview-folder:hover:not(.is-open) .paper-third,.preview-folder:focus-visible:not(.is-open) .paper-third{transform:translateY(-72px) rotate(-3deg) scale(.9)}
+.preview-folder:hover:not(.is-open) .project-paper,.preview-folder:focus-visible:not(.is-open) .project-paper{transform:translateY(-50px) rotate(2deg)}
+.preview-folder.folder-arriving .paper-third{animation:sheet-place-left 2.1s cubic-bezier(.22,1,.36,1) both}
+.preview-folder.folder-arriving .paper-second{animation:sheet-place-right 2.15s .22s cubic-bezier(.22,1,.36,1) both}
+.preview-folder.folder-arriving .paper-front{animation:sheet-place-front 2.2s .48s cubic-bezier(.22,1,.36,1) both}
+.preview-folder.folder-arriving .project-paper{animation:sheet-place-right 2.25s .15s cubic-bezier(.22,1,.36,1) both}
+@keyframes sheet-place-left{0%{opacity:0;translate:-28px -145px;rotate:-13deg}18%{opacity:1}72%{translate:2px 3px;rotate:1deg}100%{opacity:1;translate:0 0;rotate:0deg}}
+@keyframes sheet-place-right{0%{opacity:0;translate:32px -170px;rotate:12deg}18%{opacity:1}74%{translate:-2px 4px;rotate:-.8deg}100%{opacity:1;translate:0 0;rotate:0deg}}
+@keyframes sheet-place-front{0%{opacity:0;translate:-10px -190px;rotate:-7deg}20%{opacity:1}76%{translate:0 4px;rotate:.6deg}100%{opacity:1;translate:0 0;rotate:0deg}}
+@media(prefers-reduced-motion:reduce){.preview-folder.folder-arriving .certificate-paper,.preview-folder.folder-arriving .project-paper{animation:none!important}.folder-glint{transition:none}.preview-folder .certificate-paper,.preview-folder .project-paper{transition:none!important}}

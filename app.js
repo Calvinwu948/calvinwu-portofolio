@@ -122,7 +122,21 @@ folderButtons.forEach(button=>button.addEventListener('click',()=>{
  chooseTab(button.dataset.folder);
 }));
 document.querySelectorAll('[data-open-portfolio]').forEach(link=>link.addEventListener('click',()=>chooseTab(link.dataset.openPortfolio)));
-if(!reduced&&'IntersectionObserver' in window){const folderEntrance=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const folder=entry.target;folder.classList.add('folder-arriving');setTimeout(()=>folder.classList.remove('folder-arriving'),1500);folderEntrance.unobserve(folder);}),{threshold:.35});folderButtons.forEach(folder=>folderEntrance.observe(folder));}
+if(!reduced&&'IntersectionObserver' in window){const folderEntrance=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const folder=entry.target;folder.classList.add('folder-arriving');setTimeout(()=>folder.classList.remove('folder-arriving'),3000);folderEntrance.unobserve(folder);}),{threshold:.35});folderButtons.forEach(folder=>folderEntrance.observe(folder));}
 const portal=document.getElementById('Portofolio');
 function cinematicScroll(){if(reduced)return;const rect=portal.getBoundingClientRect(),travel=Math.max(1,portal.offsetHeight-innerHeight),p=Math.max(0,Math.min(1,-rect.top/travel));portal.style.setProperty('--portal-scale',String(1+p*2.8));portal.style.setProperty('--portal-opacity',String(Math.max(0,1-p*1.3)));portal.style.setProperty('--portal-glow',String(p));const hero=document.querySelector('.alpine-hero');if(hero){const t=Math.max(0,Math.min(1,-hero.getBoundingClientRect().top/innerHeight));hero.style.setProperty('--hero-scale',String(1+t*.16));hero.style.setProperty('--hero-copy-y',`${t*-65}px`);hero.style.setProperty('--hero-copy-opacity',String(1-t*.65));}}
 let cinematicQueued=false;addEventListener('scroll',()=>{if(cinematicQueued)return;cinematicQueued=true;requestAnimationFrame(()=>{cinematicScroll();cinematicQueued=false;});},{passive:true});addEventListener('resize',cinematicScroll);cinematicScroll();
+
+// A restrained reflection follows the pointer, without moving the layout.
+folderButtons.forEach(folder=>{
+  let frame=0, px=.18, py=.12;
+  const lights=[...folder.querySelectorAll('radialGradient')];
+  folder.addEventListener('pointermove',event=>{
+    if(reduced||event.pointerType==='touch')return;
+    const box=folder.getBoundingClientRect();
+    px=Math.max(0,Math.min(1,(event.clientX-box.left)/box.width));
+    py=Math.max(0,Math.min(1,(event.clientY-box.top)/box.height));
+    if(frame)return;
+    frame=requestAnimationFrame(()=>{for(const light of lights){light.setAttribute('cx',px);light.setAttribute('cy',py);}frame=0;});
+  },{passive:true});
+});
