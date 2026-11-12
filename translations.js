@@ -523,5 +523,20 @@ const translations = {
     "zh-Hans": "打开完整文件 ↗",
     "id": "Buka file lengkap ↗",
     "en": "Open full file ↗"
+  },
+  "workDetails": {
+    "zh-Hans": "工作详情",
+    "id": "Lihat detail",
+    "en": "View details"
+  },
+  "iwipMeta": {
+    "zh-Hans": "费用结算 · 系统优化",
+    "id": "Settlement · Optimasi sistem",
+    "en": "Settlement · System optimization"
+  },
+  "internMeta": {
+    "zh-Hans": "费用审核 · 数据核对",
+    "id": "Verifikasi biaya · Rekonsiliasi data",
+    "en": "Expense verification · Data reconciliation"
   }
 };
