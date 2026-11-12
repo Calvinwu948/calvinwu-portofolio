@@ -85,14 +85,14 @@ const translations = {
     "en": "Connecting languages. Simplifying work."
   },
   "bio": {
-    "zh-Hans": "我是 Calvin 吴克傧，具备中文翻译、费用结算及跨部门协调经验。目前在 IWIP 工作，负责费用核对、结算单制作与数据异常处理。",
-    "id": "Gue Calvin Wu, dengan pengalaman penerjemahan Mandarin, settlement biaya, dan koordinasi lintas departemen. Di IWIP, pekerjaan gue mencakup verifikasi biaya, penyusunan settlement, dan penanganan selisih data.",
-    "en": "I’m Calvin Wu, with experience in Mandarin translation, expense settlement, and cross-department coordination. At IWIP, I handle expense verification, settlement statements, and data discrepancies."
+    "zh-Hans": "我是 Calvin 吴克傧，在 IWIP 从事中文翻译与费用结算，喜欢把复杂的工作变得简单。",
+    "id": "Gue Calvin Wu. Di IWIP, gue bekerja di penerjemahan Mandarin dan settlement biaya—dan senang membuat pekerjaan rumit jadi lebih sederhana.",
+    "en": "I’m Calvin Wu. At IWIP, I work in Mandarin translation and expense settlement—and enjoy making complex work simpler."
   },
   "bio2": {
-    "zh-Hans": "我曾推动 Smart Salary 功能与审批流程优化，并借助 AI 辅助开发 Python 工具，实现 OA 表单填写与 PDF 批量合并。熟悉 Excel，也正在 Cakrawala University 学习人工智能。",
-    "id": "Gue ikut mengoptimalkan fitur dan alur persetujuan Smart Salary, serta membuat alat Python dengan bantuan AI untuk pengisian formulir OA dan penggabungan PDF. Terampil menggunakan Excel dan sedang kuliah Artificial Intelligence di Cakrawala University.",
-    "en": "I have helped improve Smart Salary features and approval workflows, and developed AI-assisted Python tools for OA form entry and batch PDF merging. I work with Excel and study Artificial Intelligence at Cakrawala University."
+    "zh-Hans": "用语言连接彼此，用 AI 与 Python 改善日常工作。正在学习人工智能。",
+    "id": "Menghubungkan orang lewat bahasa, dan mempermudah kerja lewat AI dan Python. Saat ini belajar Artificial Intelligence.",
+    "en": "Connecting people through language, and improving everyday work with AI and Python. Currently studying Artificial Intelligence."
   },
   "seeWork": {
     "zh-Hans": "探索我的作品 ↗",
@@ -315,14 +315,14 @@ const translations = {
     "en": "Start with a message."
   },
   "formTitle": {
-    "zh-Hans": "留言给我",
-    "id": "Tinggalkan pesan",
-    "en": "Leave me a message"
+    "zh-Hans": "留个言吧",
+    "id": "Tinggalkan komentar",
+    "en": "Leave a comment"
   },
   "formIntro": {
-    "zh-Hans": "想聊翻译、合作，或交流想法？欢迎在这里留言。",
-    "id": "Mau diskusi penerjemahan, kolaborasi, atau bertukar ide? Silakan tinggalkan pesan di sini.",
-    "en": "Have a translation enquiry, a collaboration, or an idea to share? Leave a note here."
+    "zh-Hans": "想法、建议，或一句你好。不需要姓名或邮箱。",
+    "id": "Ide, saran, atau sekadar halo. Tanpa nama atau email.",
+    "en": "An idea, a suggestion, or just a hello. No name or email needed."
   },
   "name": {
     "zh-Hans": "姓名",
@@ -335,19 +335,19 @@ const translations = {
     "en": "Email"
   },
   "message": {
-    "zh-Hans": "消息",
-    "id": "Pesan",
-    "en": "Message"
+    "zh-Hans": "留言",
+    "id": "Komentar",
+    "en": "Comment"
   },
   "minLength": {
-    "zh-Hans": "至少10个字符",
-    "id": "Minimal 10 karakter",
-    "en": "At least 10 characters"
+    "zh-Hans": "至少2个字符",
+    "id": "Minimal 2 karakter",
+    "en": "At least 2 characters"
   },
   "privacy": {
-    "zh-Hans": "你的姓名、电子邮箱与消息将以非公开方式储存，仅用于阅读与回复。",
-    "id": "Nama, email, dan pesan disimpan secara privat untuk dibaca dan ditanggapi.",
-    "en": "Your name, email, and message are stored privately for reading and responding."
+    "zh-Hans": "无需提供身份信息。留言仅 Calvin 可见，不会公开显示。",
+    "id": "Tanpa identitas. Komentar hanya dapat dibaca Calvin dan tidak ditampilkan publik.",
+    "en": "No identity details required. Comments are private to Calvin, not publicly displayed."
   },
   "send": {
     "zh-Hans": "发送消息 ↗",
@@ -365,9 +365,9 @@ const translations = {
     "en": "Sending…"
   },
   "success": {
-    "zh-Hans": "消息已发送，谢谢你的留言！",
-    "id": "Pesan berhasil dikirim. Makasih sudah menghubungi!",
-    "en": "Message sent. Thanks for getting in touch!"
+    "zh-Hans": "留言已发送，谢谢你！",
+    "id": "Komentar terkirim. Terima kasih!",
+    "en": "Comment sent. Thank you!"
   },
   "error": {
     "zh-Hans": "消息尚未发送。请检查网路，稍后再试；内容已保留。",
@@ -380,9 +380,9 @@ const translations = {
     "en": "Messaging is not available yet; messages cannot be sent. Please try again later."
   },
   "invalid": {
-    "zh-Hans": "请填写有效的姓名、电子邮箱与至少10个字符的消息。",
-    "id": "Isi nama, email yang valid, dan pesan minimal 10 karakter.",
-    "en": "Enter your name, a valid email, and a message of at least 10 characters."
+    "zh-Hans": "请填写2至3000个字符的留言。",
+    "id": "Isi komentar sepanjang 2–3000 karakter.",
+    "en": "Please enter a comment of 2–3000 characters."
   },
   "pageTitle": {
     "zh-Hans": "Calvin | 中文翻译 · AI 爱好者",
@@ -538,5 +538,20 @@ const translations = {
     "zh-Hans": "费用审核 · 数据核对",
     "id": "Verifikasi biaya · Rekonsiliasi data",
     "en": "Expense verification · Data reconciliation"
+  },
+  "openGallery": {
+    "zh-Hans": "浏览证书",
+    "id": "Jelajahi sertifikat",
+    "en": "Explore certificates"
+  },
+  "openProjects": {
+    "zh-Hans": "浏览项目",
+    "id": "Jelajahi proyek",
+    "en": "Explore projects"
+  },
+  "folderHint": {
+    "zh-Hans": "点击展开 · 再次点击收起",
+    "id": "Klik untuk buka / tutup",
+    "en": "Click to open / close"
   }
 };
