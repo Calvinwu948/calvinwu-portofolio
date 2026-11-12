@@ -87,7 +87,7 @@ let resizeTimer;addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeT
 
 // Gentle reveal staggering and timeline focus, respecting reduced motion.
 if(!reduced && 'IntersectionObserver' in window){
-  document.querySelectorAll('.education-item,.cert-card,.preview-folder,.timeline-item').forEach((el,i)=>{
+  document.querySelectorAll('.education-item,.cert-card,.timeline-item').forEach((el,i)=>{
     el.classList.add('motion-item');el.style.setProperty('--reveal-delay',`${(i%3)*90}ms`);
   });
   const motionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
