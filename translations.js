@@ -85,9 +85,9 @@ const translations = {
     "en": "Connecting languages. Simplifying work."
   },
   "bio": {
-    "zh-Hans": "我是 Calvin 吴克傧，在 IWIP 从事中文翻译与费用结算，喜欢把复杂的工作变得简单。",
-    "id": "Saya Calvin Wu. Di IWIP, saya bekerja sebagai Translator Mandarin, divisi settlement biaya—dan senang membuat pekerjaan yang kompleks jadi lebih sederhana.",
-    "en": "I’m Calvin Wu. At IWIP, I work in Mandarin translation and expense settlement—and enjoy making complex work simpler."
+    "zh-Hans": "现任印尼纬达贝工业园（IWIP）综合事务部中文翻译，主要负责费用结算相关工作。具备程序开发实践经验，能够通过开发实用工具简化复杂工作流程，提高工作效率与准确性。",
+    "id": "Bekerja sebagai Translator Mandarin General Affairs di PT. Indonesia Wedabay Industrial Park (IWIP), divisi cost settlement—berpengalaman dalam membuat program yang dimana dapat membantu mengubah pekerjaan yang kompleks menjadi lebih sederhana，efisien dan efektif.",
+    "en": "Currently working as a Mandarin Translator in the General Affairs Department, specializing in cost settlement at PT Indonesia Weda Bay Industrial Park (IWIP). Experienced in developing practical software tools to simplify complex workflows, improve operational efficiency, and enhance accuracy."
   },
   "bio2": {
     "zh-Hans": "用语言连接彼此，用 AI 与 Python 改善日常工作。正在学习人工智能。",
