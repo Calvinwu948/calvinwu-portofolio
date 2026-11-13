@@ -86,7 +86,7 @@ const translations = {
   },
   "bio": {
     "zh-Hans": "现任印尼纬达贝工业园（IWIP）综合事务部中文翻译，主要负责费用结算相关工作。具备程序开发实践经验，能够通过开发实用工具简化复杂工作流程，提高工作效率与准确性。",
-    "id": "Bekerja sebagai Translator Mandarin General Affairs di PT. Indonesia Wedabay Industrial Park (IWIP), divisi cost settlement—berpengalaman dalam membuat program yang dimana dapat membantu mengubah pekerjaan yang kompleks menjadi lebih sederhana，efisien dan efektif.",
+    "id": "Bekerja sebagai Translator Mandarin General Affairs di PT. Indonesia Wedabay Industrial Park (IWIP), divisi cost settlement—berpengalaman dalam membuat program yang dimana dapat membantu mengubah pekerjaan yang kompleks menjadi lebih sederhana, efisien dan efektif.",
     "en": "Currently working as a Mandarin Translator in the General Affairs Department, specializing in cost settlement at PT Indonesia Weda Bay Industrial Park (IWIP). Experienced in developing practical software tools to simplify complex workflows, improve operational efficiency, and enhance accuracy."
   },
   "bio2": {
