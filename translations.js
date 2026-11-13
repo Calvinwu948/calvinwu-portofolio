@@ -628,5 +628,20 @@ const translations = {
     "zh-Hans": "5 项证书 · 向下查看全部",
     "id": "5 sertifikat · gulir untuk melihat semuanya",
     "en": "5 certificates · scroll to see all"
+  },
+  "emailLabel": {
+    "zh-Hans": "电子邮件",
+    "id": "Email",
+    "en": "Email"
+  },
+  "downloadCV": {
+    "zh-Hans": "下载简历",
+    "id": "Download CV",
+    "en": "Download CV"
+  },
+  "cvFormat": {
+    "zh-Hans": "PDF · 中文 · 513 KB",
+    "id": "PDF · Mandarin · 513 KB",
+    "en": "PDF · Chinese · 513 KB"
   }
 };

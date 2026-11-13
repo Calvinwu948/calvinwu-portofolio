@@ -285,3 +285,21 @@ nav{background:linear-gradient(125deg,#ffffff18,#131a2c88 45%,#ffffff0b);border:
 .preview-folder:hover .folder-back .folder-glint,.preview-folder:focus-visible .folder-back .folder-glint{opacity:.42}
 nav{background:linear-gradient(180deg,#ffffff1b 0%,#17203373 48%,#121a2933 82%,#121a290d 100%);border-bottom-color:transparent;box-shadow:inset 0 1px 0 #ffffff30,0 9px 25px #00000017}
 @media(max-width:520px){.eka-education .education-item{grid-template-columns:32px minmax(0,1fr)}.eka-education .education-number{width:32px;height:32px;font-size:14px}.eka-education .education-item:not(:last-child):after{left:15px;top:32px}}
+
+/* Direct contact and the original downloadable CV. */
+#Contact .find-card .social{gap:15px}
+.contact-resource-icon{display:grid;place-items:center;flex:0 0 46px;height:46px;border-radius:13px;background:#80a7ff12;border:1px solid #80a7ff25;color:#a8c5ff;font-size:26px;font-weight:500}
+#Contact .contact-email{margin-top:12px}
+#Contact .contact-email>span:nth-child(2){min-width:0}
+#Contact .contact-email small{overflow-wrap:anywhere;font-size:13px}
+.cv-download{display:flex;align-items:center;gap:16px;margin-top:24px;padding:23px 20px;border:1px solid #9cbcff35;border-radius:20px;background:linear-gradient(135deg,#4b75c126,#23345020 70%);box-shadow:inset 0 1px 0 #ffffff0d;transition:border-color .25s,background .25s,transform .25s}
+.cv-file-icon{display:grid;place-items:center;flex:0 0 46px;height:58px;border:1px solid #9dbbff30;border-radius:11px;color:#b7cdff;background:#829dff0a}
+.cv-file-icon svg{width:28px;height:28px}
+.cv-download-copy{display:flex;flex-direction:column;gap:6px;min-width:0}
+.cv-download-copy>small{color:#90a7ce;font-size:9px;letter-spacing:1.8px}
+.cv-download-copy strong{font-size:19px;font-weight:600;color:#ecf2ff;line-height:1.4}
+.cv-download-copy>span{font-size:11px;color:#93a2ba}
+.cv-download-arrow{display:grid;place-items:center;margin-left:auto;flex:0 0 34px;height:34px;border-radius:50%;background:#96b5ff12;color:#bad0ff;font-size:22px}
+.cv-download:hover{transform:translateY(-2px);border-color:#9cbcff65;background:linear-gradient(135deg,#4b75c139,#23345020 70%)}
+.cv-download:focus-visible{outline:2px solid #9cbcff;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.cv-download{transition:none}.cv-download:hover{transform:none}}
