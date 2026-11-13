@@ -275,3 +275,13 @@ nav{background:linear-gradient(125deg,#ffffff18,#131a2c88 45%,#ffffff0b);border:
 .tocfl-controls button{pointer-events:auto;display:grid;place-items:center;width:36px;height:36px;padding:0;border:1px solid #ffffff35;border-radius:50%;background:#080e19aa;backdrop-filter:blur(10px);color:#fff;font-size:27px;line-height:1;box-shadow:0 3px 12px #0002;transition:background .2s}
 .tocfl-controls button:hover{background:#263c60e6}
 .tocfl-controls button:focus-visible{outline:2px solid #9bbdff;outline-offset:3px}
+
+/* Compact timeline markers and softer glass edges. */
+.eka-education .education-item{grid-template-columns:36px minmax(0,1fr)}
+.eka-education .education-number{width:36px;height:36px;font-size:15px}
+.eka-education .education-item:not(:last-child):after{left:17px;top:36px}
+.eka-education .education-item.is-highlighted .education-number,.eka-education .education-item:hover .education-number,.eka-education .education-item:focus-within .education-number{box-shadow:0 0 0 3px #ffffff18,0 0 18px #ffffff12}
+.preview-folder .folder-back .folder-glint{display:block;opacity:.34}
+.preview-folder:hover .folder-back .folder-glint,.preview-folder:focus-visible .folder-back .folder-glint{opacity:.42}
+nav{background:linear-gradient(180deg,#ffffff1b 0%,#17203373 48%,#121a2933 82%,#121a290d 100%);border-bottom-color:transparent;box-shadow:inset 0 1px 0 #ffffff30,0 9px 25px #00000017}
+@media(max-width:520px){.eka-education .education-item{grid-template-columns:32px minmax(0,1fr)}.eka-education .education-number{width:32px;height:32px;font-size:14px}.eka-education .education-item:not(:last-child):after{left:15px;top:32px}}

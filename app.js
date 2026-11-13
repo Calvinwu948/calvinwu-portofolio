@@ -130,7 +130,7 @@ let cinematicQueued=false;addEventListener('scroll',()=>{if(cinematicQueued)retu
 // A restrained reflection follows the pointer, without moving the layout.
 folderButtons.forEach(folder=>{
   let frame=0, px=.18, py=.12;
-  const lights=[...folder.querySelectorAll('radialGradient')];
+  const lights=[...folder.querySelectorAll('.folder-cover radialGradient')];
   folder.addEventListener('pointermove',event=>{
     if(reduced||event.pointerType==='touch')return;
     const box=folder.getBoundingClientRect();
